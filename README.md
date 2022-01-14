@@ -66,7 +66,7 @@ Next, create the following functions:
 
 * Create a fallback function using `function() external payable`, and call the `deposit` function from within it. This will ensure that the logic in `deposit` executes if Ether is sent directly to the contract. This is important to prevent Ether from being locked in the contract since we don't have a `withdraw` function in this use-case.
 
-![contract](/Users/shbinding/Desktop/Remix Contract.sol.png)
+![contract](https://github.com/shrutib55/solidity-hw/blob/6d1976e0a8e057e5046961b34101548850240f9c/Screenshots/Remix%20Contract.sol.png)
 
 #### Test the contract
 
@@ -74,7 +74,9 @@ In the `Deploy` tab in Remix, deploy the contract to your local Ganache chain by
 
 You will need to fill in the constructor parameters with your designated `employee` addresses.
 
+![contract](https://github.com/shrutib55/solidity-hw/blob/1858a51b69933ca31bc9676a1a7056a1ac44a356/Screenshots/Deployment.png)
+
 Test the `deposit` function by sending various values. Keep an eye on the `employee` balances as you send different amounts of Ether to the contract and ensure the logic is executing properly.
 
-![Remix Testing](Images/remix-test.png)
+![Remix Testing](https://github.com/shrutib55/solidity-hw/blob/29abba95fbea76925d481c8010d9829949f0fd17/Screenshots/Finished%20Transaction.png)
 
